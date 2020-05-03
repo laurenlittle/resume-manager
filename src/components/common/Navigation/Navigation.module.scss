@@ -1,0 +1,47 @@
+// Color Variables
+$white: #fff;
+$primary: #434d91;
+$secondary: #E8411E;
+$dark: #1f1b27;
+$lightGray: #e9e9e9;
+
+.nav {
+  background: $lightGray;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.headerLogo img {
+  height: 7rem;
+  vertical-align: middle;
+}
+
+.menuItems {
+  list-style-type: none;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  place-self: center end;
+
+  li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.singleMenuItem {
+  transition: 0.3s ease-in;
+  margin-right: 2rem;
+  color: $dark;
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: $dark;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $primary;
+  }
+}

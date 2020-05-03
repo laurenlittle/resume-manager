@@ -1,0 +1,29 @@
+// Color Variables
+$white: #fff;
+$primary: #434d91;
+$secondary: #E8411E;
+$dark: #1f1b27;
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+}
+
+.sectionLeft {
+  background: $white;
+  padding-left: 3rem;
+  display: grid;
+  grid-template-rows: 8rem 1fr;
+}
+
+.sectionRight {
+  background: $primary;
+  overflow: hidden;
+}
+
+.mainImg {
+  height: 80rem; // Update for smaller devices
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 10px 25px #333);
+  vertical-align: middle;
+}

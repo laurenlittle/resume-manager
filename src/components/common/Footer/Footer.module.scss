@@ -1,0 +1,17 @@
+// Color Variables
+$white: #fff;
+$primary: #434d91;
+$secondary: #E8411E;
+$dark: #1f1b27;
+
+.footer {
+  background: $dark;
+  display: none;
+}
+
+@media screen and (min-width: 380px) {
+
+  .footer {
+    display: block;
+  }
+}

@@ -1,0 +1,24 @@
+// Variable Declarations
+$white: #fff;
+$primary: #434d91;
+$secondary: #E8411E;
+$dark: #1f1b27;
+
+.content {
+  margin: auto 0;
+
+  p {
+    font-size: 2rem;
+  }
+}
+
+.heading {
+  font-size: calc(3rem + 2vw);
+  color: $dark;
+  line-height: 1.2;
+  margin-bottom: 5rem;
+}
+
+.highlight {
+  border-bottom: 2px solid $secondary;
+}
