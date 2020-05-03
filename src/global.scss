@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,700&display=swap');
+
+// Color Variables
+$white: #fff;
+$primary: #434d91;
+$secondary: #E8411E;
+$dark: #1f1b27;
+
+// Fonts
+$roboto: 'Roboto', Arial, sans-serif;
+
+html {
+  font-size: 62.5%; // 1rem = 10px;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $roboto;
+  font-weight: 500;
+  line-height: 1.7;
+  overflow-x: hidden;
+  // height: 100vh;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
