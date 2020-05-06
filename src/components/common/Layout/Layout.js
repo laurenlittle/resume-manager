@@ -1,28 +1,29 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styles from './Layout.module';
 import Navigation from '../Navigation/Navigation';
-// import Footer from '../Footer/Footer';
-import iphone from '../../../assets/iphone.png'
+import Footer from '../Footer/Footer';
+import documents from '../../../assets/documents.png';
+import Button from '../Button/Button';
 
 const Layout = ({ children }) => {
 
   return(
     <div className={styles.layout}>
 
-      <section className={styles.sectionLeft}>
-        <Navigation />
-          {children}
-        {/* <Footer /> */}
-      </section>
+      <Navigation />
 
-      <section className={styles.sectionRight}>
-        <Link className={styles.button} to='/profile'>Log In</Link>
-        <img src={iphone} className={styles.mainImg} alt='iphone displaying mobile app' />
-      </section>
+      <div className={styles.sectionContainer}>
+        <section className={styles.sectionLeft}>
+            {children}
+        </section>
 
+        <section className={styles.sectionRight}>
+          <img src={documents} className={styles.mainImg} alt='girl organizing papers in filing cabinet' />
+        </section>
+      </div>
+
+      <Footer />
     </div>
  )
-
 }
 export default Layout;
