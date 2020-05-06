@@ -1,7 +1,8 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import styles from './LandingPage.module'
-import Layout from '../../common/Layout/Layout'
+import styles from './LandingPage.module';
+import Layout from '../../common/Layout/Layout';
+import Button from '../../common/Button/Button';
 
 const LandingPage = () => {
   return (
@@ -12,7 +13,7 @@ const LandingPage = () => {
           work completed, and career milestones all in one place.
           Updating resumes and portfolios becomes painless.
         </p>
-        {/* TODO Add Button Component */}
+          <Button text="Get Started" />
       </div>
     </Layout>
   )

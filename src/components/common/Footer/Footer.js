@@ -8,7 +8,7 @@ const Footer = () => {
 
   return(
     <footer className={styles.footer}>
-      &copy; {year} Take CMD
+      <p>&copy; {year} Take CMD</p>
       <Link className={styles.footerLink} to='/'>credits</Link>
     </footer>
  )

@@ -21,6 +21,9 @@ const Navigation = () => {
         <li>
           <Link className={styles.singleMenuItem} to='/support'>Support</Link>
         </li>
+        <li>
+          <Link className={styles.linkButton} to='/login'>Log In</Link>
+        </li>
       </ul>
 
     </nav>

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Button.module';
 
-const Button = (text) => {
+const Button = ({text}) => {
 
   return(
     <button className={styles.button}>
@@ -10,4 +10,5 @@ const Button = (text) => {
     </button>
  )
 }
+
 export default Button;

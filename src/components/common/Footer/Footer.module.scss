@@ -3,15 +3,24 @@ $white: #fff;
 $primary: #434d91;
 $secondary: #E8411E;
 $dark: #1f1b27;
+$lightGray: #efefef;
 
 .footer {
-  background: $dark;
-  display: none;
-}
+  padding: 0.5rem 3rem;
+  background: $primary;
+  color: $white;
+  font-size: 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
-@media screen and (min-width: 380px) {
+  .footerLink {
+    justify-self: end;
+    text-decoration: none;
+    color: $lightGray;
 
-  .footer {
-    display: block;
+    &:hover,
+    &:active {
+      color: $white;
+    }
   }
 }
