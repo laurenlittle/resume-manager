@@ -36,3 +36,20 @@ $dark: #1f1b27;
 .highlight {
   border-bottom: 2px solid $secondary;
 }
+
+.link {
+  transition: 0.3s ease-in;
+  color: $secondary;
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: $secondary;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $primary;
+  }
+}
