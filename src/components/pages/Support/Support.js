@@ -7,13 +7,18 @@ const Support = () => {
   return (
     <Layout>
       <div className={styles.content}>
-        <h1 className={styles.heading}>Need <span className={styles.highlight}>Support</span> or have a question?</h1>
+        <h1 className={styles.heading}>Need <span className={styles.highlight}>Support</span> ?</h1>
         <p>
-          We'd love to hear from you. Tell us how we can help and we'll help find a solution.
+          Got Feedback? Have a question?
+          <br/>
+          We'd love to hear from you.
+          <br/>
+          Tell us how we can help and we'll help find a solution.
         </p>
-        <p>
-          TODO: Add Contact Form
-        </p>
+        <a className={styles.link} href='mailto:littlelauren016@gmail.com'>
+          Contact Us Now
+        </a>
+        {/* TODO: Update to Form */}
       </div>
     </Layout>
   )
