@@ -1,0 +1,25 @@
+// Color Variables
+$white: #fff;
+$primary: #434d91;
+$secondary: #E8411E;
+$dark: #1f1b27;
+$darkGray: #656363;
+
+.layout {
+  display: grid;
+  grid-template-rows: 8rem 1fr 4rem;
+  height: 100vh;
+}
+
+.sectionContainer {
+  background: $white;
+  display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+}
+
+.sectionLeft {
+  padding-left: 3rem;
+  display: grid;
+}
+
+
