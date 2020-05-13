@@ -1,0 +1,43 @@
+.formTitle {
+  margin-top: 2rem;
+}
+
+.formTitle,
+.formDescription {
+  border-radius: 3px;
+  padding: 1rem;
+  width: 85%;
+  font-size: 1.6rem;
+  font-weight: bold;
+
+  &:focus {
+    outline: #E8411E auto 5px;
+  }
+}
+
+.formDescription {
+  margin: 2rem 0;
+}
+
+.btnSubmit {
+  border: 1px solid #E8411E;
+  padding: 1rem;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #E8411E;
+  width: 85%;
+  font-size: 1.6rem;
+  transition: 0.3s ease-in;
+
+  &:link,
+  &:visited {
+    color: #E8411E; // extend
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: #E8411E;
+    color: #fff;
+  }
+}

@@ -1,9 +1,11 @@
 import React from 'react';
-import styles from './InternalLayout.module';
-import InternalNav from '../InternalNav/InternalNav';
-// import Button from '../Button/Button';
+import styles from './Dashboard.module';
+import InternalNav from '../../common/InternalNav/InternalNav';
+import Footer from '../../common/Footer/Footer';
+import { withRouter } from 'react-router-dom';
+import AddForm from '../../forms/AddForm';
 
-const InternalLayout = () => {
+const Dashboard = () => {
 
   return(
     <div className={styles.layout}>
@@ -16,7 +18,7 @@ const InternalLayout = () => {
         </section>
 
         <section className={styles.sectionRight}>
-          {/* TODO  Form component */}
+          <AddForm />
         </section>
       </div>
 
@@ -24,4 +26,4 @@ const InternalLayout = () => {
     </div>
  )
 }
-export default InternalLayout;
+export default withRouter(Dashboard);
