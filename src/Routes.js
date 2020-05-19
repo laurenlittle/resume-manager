@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {
   BrowserRouter,
   Switch,
@@ -8,6 +8,8 @@ import LandingPage from '../src/components/pages/LandingPage/LandingPage';
 import About from '../src/components/pages/About/About';
 import Support from '../src/components/pages/Support/Support';
 import Dashboard from './components/pages/Dashboard/Dashboard';
+import SignIn from './components/pages/SignIn/SignIn';
+import PrivateRoute from './components/PrivateRoute';
 
 const Routes = () => {
 
@@ -17,7 +19,8 @@ const Routes = () => {
         <Route path='/' exact component={LandingPage} />
         <Route path='/about' exact component={About} />
         <Route path='/support' exact component={Support} />
-        <Route path='/dashboard' exact component={Dashboard} />
+        <Route path='/signin' exact component={SignIn} />
+        <PrivateRoute path='/dashboard' exact component={Dashboard} />
       </Switch>
     </BrowserRouter>
   )
