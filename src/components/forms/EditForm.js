@@ -1,30 +1,9 @@
 import React, { useState } from 'react';
-import styles from './AddForm.module';
-import { auth } from '../../firebase';
+import styles from './AddForm.module'; // use same styles as other form
 
-const AddForm = ({ addDocument }) => {
+const EditForm = ({setEditing, currentDoc, documentRef, updateDocument}) => {
 
-const initialFormState = {
-  title: '',
-  description: ''
-};
-
-const [document, setDocument] = useState(initialFormState);
-
-const { title, description } = document;
-const { uid, displayName, photoURL, email } = auth.currentUser || {};
-
-const documentInfo = {
-  title,
-  description,
-  user: {
-    uid,
-    displayName,
-    email,
-    photoURL
-  },
-  createdAt: new Date(),
-};
+const [document, setDocument] = useState(currentDoc);
 
   const handleChange = name => e => {
     setDocument({
@@ -36,15 +15,17 @@ const documentInfo = {
   const handleSubmit = e => {
     e.preventDefault();
 
-    addDocument(documentInfo);
+    updateDocument(document, documentRef);
     setDocument({
       ...document,
       title: '',
       description: ''
     })
+
+    setEditing(false);
   }
 
-  const addDocumentForm = () => (
+  const editForm = () => (
     <form onSubmit={handleSubmit}>
       <div className={styles.formItem}>
          <input
@@ -71,17 +52,17 @@ const documentInfo = {
           placeholder='Description'
           ></textarea>
       </div>
-      <button className={styles.button}>+ Add to CMD</button>
+      <button className={styles.btnSubmit}>+ Add to CMD</button>
     </form>
   )
 
   return (
     <>
-    <h2 className={styles.heading}>Add a New Accomplishment!</h2>
-    {addDocumentForm()}
+    <h2>Edit CMD:</h2>
+    {editForm()}
     </>
   )
 
 }
 
-export default AddForm;
+export default EditForm;

@@ -1,43 +1,48 @@
+@import '../common/Button/Button.module.scss';
+
+.heading {
+  color: #5E6C84;
+  font-size: 1.6rem;
+  letter-spacing: -0.01em;
+  line-height: 2.8rem;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  width: 80%;
+}
+
 .formTitle {
   margin-top: 2rem;
 }
 
 .formTitle,
 .formDescription {
-  border-radius: 3px;
-  padding: 1rem;
-  width: 85%;
-  font-size: 1.6rem;
-  font-weight: bold;
-
-  &:focus {
-    outline: #E8411E auto 5px;
-  }
+    display: block;
+    margin: 0 0 1.2rem;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    background-color: #FAFBFC;
+    border: 2px solid #DFE1E6;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 4.4rem;
+    max-width: 25rem;
+    width: 100%;
+    -webkit-transition: background-color .2s ease-in-out 0s,
+    border-color .2s ease-in-out 0s;
+    transition: background-color .2s ease-in-out 0s,
+    border-color .2s ease-in-out 0s;
 }
 
 .formDescription {
   margin: 2rem 0;
+  min-height: 5em;
+  max-height: 50vh;
 }
 
-.btnSubmit {
-  border: 1px solid #E8411E;
-  padding: 1rem;
-  border-radius: 3px;
-  text-decoration: none;
-  color: #E8411E;
-  width: 85%;
-  font-size: 1.6rem;
-  transition: 0.3s ease-in;
-
-  &:link,
-  &:visited {
-    color: #E8411E; // extend
-  }
-
-  &:hover,
-  &:active,
-  &:focus {
-    background: #E8411E;
-    color: #fff;
-  }
+.button {
+  margin: 0 0 1.2rem;
+  max-width: 25rem;
+  width: 100%;
 }
