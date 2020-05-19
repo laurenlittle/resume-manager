@@ -22,7 +22,7 @@ const Navigation = () => {
           <Link className={styles.singleMenuItem} to='/support'>Support</Link>
         </li>
         <li>
-          <Link className={styles.linkButton} to='/login'>Log In</Link>
+          <Link className={styles.linkButton} to='/signin'>Sign In</Link>
         </li>
       </ul>
 

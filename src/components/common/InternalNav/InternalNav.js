@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './InternalNav.module';
 import { Link } from 'react-router-dom';
-import logo from '../../../assets/take-cmd-logo.png'
+import logo from '../../../assets/take-cmd-logo.png';
 
 const InternalNav = () => {
 
